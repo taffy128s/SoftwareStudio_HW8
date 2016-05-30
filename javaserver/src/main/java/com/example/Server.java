@@ -29,6 +29,7 @@ public class Server extends JFrame implements Runnable {
         this.setPreferredSize(new Dimension(300, 200));
         JScrollPane scrollPane = new JScrollPane(this.textArea);
         this.add(scrollPane);
+        this.pack();
 
         try {
             InetAddress IP = InetAddress.getLocalHost();
